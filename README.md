@@ -48,7 +48,7 @@ The [ASCII character set]().
 
 ## Chapter Links
 
-[Chapter 1]()
+[Chapter 1](https://github.com/Dom-Caracappa/c-programming-a-modern-approcah/blob/main/Notes/Chapter_1/ch1_notes.md)
 
 [Chapter 2]()
 
