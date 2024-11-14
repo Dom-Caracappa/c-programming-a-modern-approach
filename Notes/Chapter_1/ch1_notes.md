@@ -3,7 +3,7 @@
 
 ## Origins
 
-C is a by-product of the **UNIX Operating System**, developed in New Jersey at Bell Laboratories by *Ken Thompson*, *Dennis Richie*, and other Bell Researchers.
+C is a by-product of the **UNIX Operating System**, developed at Bell Laboratories by *Ken Thompson*, *Dennis Richie*, and other Bell Researchers.
 
 UNIX, like most operating systems of its era, was written in [Assembly Language](), a *low-level* language, making debugging and enhancement to existing code base difficult. As UNIX development was suffering from these issues, it was decided that a *higher-level* language was needed to continue UNIX development. 
 
@@ -38,4 +38,6 @@ The development of a U.S. standard for C began in 1983 under the auspices of the
 The **C99** standard - released in 1999 - was an attempt to modernize the language with the creation of [inline functions]() for performance, [variable-lengths arrays]() for flexibility in memory use, the `long long int` type for extended precision, new data types and boolean types, as well as `//` single-line comments. The update also improved *floating-point operations*, making C more useful for scientific and engineering applications. 
 
 **C11** - released in 2011 - improved portability and safety. C11 introduced a standard way of handling concurrency with thread-local storage and atomic operations, enhancing performance in multi-core environments. [Static assertions]() allow for compile-time error checking, [anonymous unions]() made structures more flexible and readable.The update added support for UTF-16 and UTF-32, expanding use for internationalization of word processor applications. [Optional bounds checking]() were aimed at increasing safety, these checking functions help catch buffer overflows.
+
+**C17/C18** focused mostly on stability by  bug fixes and addressing ambiguities/inconsistancies in C11.  
 
