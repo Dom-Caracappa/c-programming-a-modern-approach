@@ -41,3 +41,5 @@ The **C99** standard - released in 1999 - was an attempt to modernize the langua
 
 **C17/C18** focused mostly on stability by  bug fixes and addressing ambiguities/inconsistancies in C11.  
 
+**C23** was designed to bring modern coding advancements into the C Language. New [keywords]() such as `typeof` (to simplify [type checking]()) and enhanced `constexpr` capabilities to evaluate expressions at compile time. C23 expanded the [Standard Library]() with new mathematical functions
+
