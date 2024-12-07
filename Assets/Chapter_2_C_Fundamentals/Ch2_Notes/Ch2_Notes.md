@@ -11,7 +11,7 @@
 - Section 2.7: C's rules for creating names or "Identifiers".
 - Section 2.8: Rules for laying out a C program.
 
-## 2.1 Writing a Simple Program
+## 2.1 - Writing a Simple Program
 
 C requires little in the way of *boilerplate* code, a complete program can be as short as a few lines.
 
@@ -104,7 +104,7 @@ As indicated in the output, this file was empty. I manually corrected this by co
 
 Moving my development into the Linux file system will prevent these types of errors as I am relying on Unix tools to build my program.
 
-## 2.2 The General Form of a Simple Program
+## 2.2 - The General Form of a Simple Program
 
 Taking a closer look a `pun.c`, we can generalize it a bit as simple C programs have the form:
 
@@ -137,7 +137,7 @@ This directive states that the information of `<stdio.h>` is to be included into
 
 C has a number of [Headers]() like `<stdio>` that contain some functionality from the standard library. This is a necessary inclusion as C contains no built-in *read* or *write* programs. This ability is accomplished by leveraging the standard library.
 
-Directives always begin with a `#` character, distinguishing them from other items in a C program. By default, directives are one line long and there is no special marker (such as `;` as in JavaScript) to designate the end of a directive.
+Directives always begin with a `#` character, distinguishing them from other items in a C program. By default, directives are one line long and there is no special marker character to designate the end of a directive.
 
 ### Functions
 
@@ -189,3 +189,79 @@ The statement `return 0` has two effects:
 2. It indicates that the `main` function returns a value of `0`.
 
 We will discuss the `main` return value in more detail later, for now we need to know that value `0` indicates a normal program termination.  
+
+If there's no `return` statement at the end of the `main` function, the program will still terminate, however many compilers will throw a *warning message* because the function did not return an integer as expected. 
+
+### Statements
+
+A [Statement]() is a command to be executed when the program runs. 
+
+The `pun.c` program only uses two kinds of statements:
+
+1. The `return` statement
+2. A *function call* - Asking a function to perform its assigned task is known as *calling the function*.
+
+In `pun.c`, we use the `printf` function to display a string on screen:
+
+```C
+printf("To C, or not to C: that is the question. \n");
+```
+C requires each statement end with a semicolon `;` - with the exception of the [Compound Statement]() to be discussed later. The semicolon shows the compiler where the statement ends. This is helpful as statements can run longer than one line. 
+
+#### Syntax Review
+
+| Language Feature | Number of Lines Long | Ending Character|
+|------------------|----------------------|-----------------|
+| **Directives** | Normally one line long | Nothing         |
+| **Statements** | Can have multiple lines| `;`             |
+
+### Printing Strings
+
+The function `printf` is quite powerful, and we have only scratched the surface of its functionality by using it to display a [String Literal](c-programming-a-modern-approach/Assets/Reference/Terms/String_Literal.md) - or a  series of characters enclosed in double quotation marks. When `printf` prints the string, it knows not to print the quotation marks. 
+
+The function `printf` doesn't automatically advance to the next output line, to do that, we must include `\n`, the *new-line character*. Writing the new-line character terminates the current output line, directing subsequent output to the next line. 
+
+**Example** 
+
+```C
+Brevity is the soul of wit.
+  --Shakespeare
+
+// Could be written in C as...
+
+printf("Brevity is the soul of wit. \n --Shakespeare\n")
+```
+## 2.3 - Comments
+
+Our `pun.c` program lacks documentation! Every program should contain some identifying information: 
+
+- The program's name
+- The date it was written
+- The purpose of the program
+- The author
+
+In C - and many other languages - this information is placed in [Comments](c-programming-a-modern-approach/Assets/Reference/Terms/Comments.md).
+
+Comments come in two varieties:
+
+The first uses the `/*` symbol to mark the comment's beginning and `*/` to mark the end.
+
+```C
+/* This is a one-line comment */
+
+/* These are one-line comments */
+/* These are one-line comments */
+/* These are one-line comments */
+
+/* This comment
+   is on 
+   multiple lines */
+  ```
+
+  The second method allows comments on the same line as code by using the double-forward slash `//`.
+
+```c
+printf("This is code") // This is a comment
+```
+
+
