@@ -1,5 +1,8 @@
 {
     "[markdown]": {
         "editor.cursorSurroundingLines": 0
-    }
+    },
+    "spellchecker.ignoreWordsList": [
+        "Compl"
+    ]
 }

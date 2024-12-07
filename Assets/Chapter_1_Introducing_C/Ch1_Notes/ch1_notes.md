@@ -35,14 +35,16 @@ The development of a U.S. standard for C began in 1983 under the auspices of the
 
 ## C the Living Language
 
-The **C99** standard - released in 1999 - was an attempt to modernize the language with the creation of [inline functions]() for performance, [variable-lengths arrays]() for flexibility in memory use, the `long long int` type for extended precision, new data types and boolean types, as well as `//` single-line comments. The update also improved *floating-point operations*, making C more useful for scientific and engineering applications. 
+The **C99** standard - released in 1999 - was an attempt to modernize the language with the creation of [inline functions]() for performance, [variable-lengths arrays]() for flexibility in memory use, the `long long int` type for extended precision, new data types and Boolean types, as well as `//` single-line comments. The update also improved *floating-point operations*, making C more useful for scientific and engineering applications. 
 
 **C11** - released in 2011 - improved portability and safety. C11 introduced a standard way of handling concurrency with thread-local storage and atomic operations, enhancing performance in multi-core environments. [Static assertions]() allow for compile-time error checking, [anonymous unions]() made structures more flexible and readable.The update added support for UTF-16 and UTF-32, expanding use for internationalization of word processor applications. [Optional bounds checking]() were aimed at increasing safety, these checking functions help catch buffer overflows.
 
-**C17/C18** focused mostly on stability by  bug fixes and addressing ambiguities/inconsistancies in C11.  
+**C17/C18** focused mostly on stability by  bug fixes and addressing ambiguities/inconsistencies in C11.  
 
 **C23** was designed to bring modern coding advancements into the C Language. New [keywords]() such as `typeof` (to simplify [type checking]()) and enhanced `constexpr` capabilities to evaluate expressions at compile time. C23 expanded the [Standard Library]() with new mathematical functions and other utility improvements with the idea of making the language more versatile and accessible to new users. Improved Unicode support created more openings to international use and improved its [string manipulation]() functionality.
 
 ## Modern Context of C
 
 Systems Programming and Embedded Applications: C remains the go-to language for systems programming, embedded applications, and operating systems because of its efficiency, control over hardware, and small runtime footprint. Interoperability with other languages is a core feature of C, and the language's stable [ABI (Application Binary Interface)]() allows it to interface with other languages and environments, making it integral in environments like Linux, where it underpins many core libraries. C’s newer standards continue to evolve cautiously, balancing new language features and compatibility with existing codebases, ensuring that C remains relevant for both new and legacy applications.
+
+Lorem ipsum dolor{++ sit++} amet...
